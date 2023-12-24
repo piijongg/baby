@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>click mo hehe</title>
+    <style>
+        body {
+            background: linear-gradient(90deg, rgba(117,106,182,1) 0%, rgba(172,135,197,1) 35%, rgba(224,174,208,1) 100%);            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #heart {
+            font-size: 3em;
+            color: red;
+            cursor: pointer;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        #message {
+            justify-content: center ;
+            display: none;
+            text-align: center;
+            font-size: 1.5em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div id="heart">💌</div>
+<div id="message">Happy 10th Monthsary Love! I Love You !❤️</div>
+
+<script>
+    document.getElementById('heart').addEventListener('click', function () {
+        // Make the heart spin
+        this.style.transform = 'rotate(360deg)';
+
+        // Display the hidden message
+        document.getElementById('message').style.display = 'block';
+    });
+</script>
+
+</body>
+</html>
